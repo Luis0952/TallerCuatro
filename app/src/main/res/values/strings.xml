@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">TallerCuatro</string>
+    <string name="str_1">luis</string>
+    <string name="strg_1">10:49</string>
+    <string name="strg_2">Sábado</string>
+    <string name="strg_3">29 Agosto 2017</string>
+    <string name="str_4">2</string>
+    <string name="str_5">Llamadas</string>
+    <string name="str_6">4</string>
+    <string name="str_7">Mensajes</string>
+    <string name="str_8">48</string>
+    <string name="str_9">Notificaciones</string>
+    <string name="str_10">Estado de la bateria: 91%</string>
+    <string name="strg_4">10:49</string>
+    <string name="strg_5">29 Agosto 2017</string>
+    <string name="str_11">48</string>
+    <string name="str_12">Estado de la bateria: 91%</string>
+    <string name="strg_6">10:49</string>
+    <string name="strg_7">Sábado</string>
+    <string name="strg_8">29 Agosto 2017</string>
+    <string name="str_13">2</string>
+    <string name="str_14">Llamadas</string>
+    <string name="str_15">4</string>
+    <string name="str_16">48</string>
+    <string name="str_17">Estado de la bateria</string>
+    <string name="string_1">Crear cuenta</string>
+    <string name="string_2">Usuario</string>
+    <string name="string_3">Contraseña</string>
+    <string name="string_4">Aceptar</string>
+    <string name="string_5">Mostrar Opciones</string>
+    <string name="string_6">Opcion 1</string>
+    <string name="string_7">Opción 2</string>
+</resources>

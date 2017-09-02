@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.usuario.tallercuatro.MainActivityUno">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--inicio del Item-->
+
+                <!--INICIO DEL HEADER-->
+
+<!--   android:background="#1abc9c"-->
+
+                <RelativeLayout
+                    android:id="@+id/rl_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/borderone"
+                    android:padding="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/perfil_man"/>
+
+                    <!---->
+                    <TextView
+                        android:id="@+id/txt_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/img_1"
+                        android:text="@string/strg_1"
+                        android:textSize="12dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/txt_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/img_1"
+                        android:text="@string/strg_2"
+                        android:textSize="10dp"
+                        android:layout_below="@id/txt_1"/>
+
+                    <TextView
+                        android:id="@+id/txt_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/img_1"
+                        android:text="@string/strg_3"
+                        android:textSize="10dp"
+                        android:layout_below="@id/txt_2"/>
+                </RelativeLayout>
+
+            <!---->
+
+                <!--FIN DEL HEADER-->
+                    <!--LLamadas mensajes y notificaciones-->
+                    <LinearLayout
+                      android:id="@+id/lly_1"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:background="@drawable/borderthree"
+                      android:layout_below="@id/rl_1"
+                      android:paddingBottom="10dp"
+                      android:paddingTop="10dp"
+                      android:layout_alignParentBottom="true"
+                      android:layout_marginRight="10dp"
+                      android:layout_marginLeft="10dp">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <!--2-->
+                            <TextView
+                                android:id="@+id/txt_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/str_4"
+                                android:paddingLeft="10dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:textSize="15sp"
+                                android:textStyle="bold"/>
+
+                            <!--Llamadas-->
+                            <TextView
+                                android:id="@+id/txt_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/str_5"
+                                android:textSize="15sp"
+                                android:layout_below="@id/txt_4"
+                                android:paddingTop="10dp"
+                                android:paddingLeft="15dp"
+                                android:layout_centerHorizontal="true"
+                                android:textStyle="bold"/>
+                        </RelativeLayout>
+
+                        <!--4 Mensajes-->
+
+                        <RelativeLayout
+                            android:id="@+id/rl_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <!--4-->
+                            <TextView
+                                android:id="@+id/txt_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/str_6"
+                                android:layout_centerInParent="true"
+                                android:layout_alignParentTop="true"
+                                android:textSize="15sp"
+                                android:textStyle="bold"/>
+
+                            <!--Mensajes-->
+                            <TextView
+                                android:id="@+id/txt_7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/str_7"
+                                android:textSize="15sp"
+                                android:layout_below="@id/txt_6"
+                                android:paddingTop="10dp"
+                                android:paddingLeft="15dp"
+                                android:layout_centerHorizontal="true"
+                                android:textStyle="bold"/>
+                        </RelativeLayout>
+
+                    <!--8 Notificaciones-->
+                        <RelativeLayout
+                            android:id="@+id/rl_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+                            <!--8-->
+                            <TextView
+                                android:id="@+id/txt_8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/str_8"
+                                android:paddingLeft="10dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:textSize="15sp"
+                                android:textStyle="bold"/>
+                            <!--Notificaciones-->
+                            <TextView
+                                android:id="@+id/txt_9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/str_9"
+                                android:textSize="15sp"
+                                android:layout_below="@id/txt_8"
+                                android:paddingTop="10dp"
+                                android:paddingLeft="15dp"
+                                android:layout_centerHorizontal="true"
+                                android:textStyle="bold"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+              <!--Tercer Item Estado de la bateria-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bordertwo"
+                        android:paddingBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp">
+
+                <!--Marco de la imagen de la camara-->
+                         <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#6F591D"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp">
+
+                        <ImageView
+                            android:id="@+id/img_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/camera"
+                            android:background="@android:color/white"/>
+                        </RelativeLayout>
+
+                 <!--ICONO IMAGEN-->
+                     <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:paddingBottom="10dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#6F591D">
+
+                    <ImageView
+                            android:id="@+id/img_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/picture"
+                            android:layout_centerInParent="true"
+                            android:background="@android:color/white"/>
+                    </RelativeLayout>
+
+                <!--Estado de la bateria-->
+
+                    <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="15"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#F90A3A">
+
+                        <TextView
+                            android:id="@+id/txt_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/str_10"
+                            android:textColor="@android:color/white"
+                            android:layout_centerInParent="true"
+                            android:textStyle="bold"/>
+                    </RelativeLayout>
+            </LinearLayout>
+
+            <!--ITEM 2-->
+
+            <RelativeLayout
+                android:id="@+id/rl_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderone"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/img_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/perfil_man" />
+
+                <!---->
+                <TextView
+                    android:id="@+id/txt_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img_4"
+                    android:text="@string/strg_4"
+                    android:textSize="12dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txt_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img_4"
+                    android:text="@string/strg_2"
+                    android:textSize="10dp"
+                    android:layout_below="@id/txt_11"/>
+
+                <TextView
+                    android:id="@+id/txt_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img_4"
+                    android:text="@string/strg_5"
+                    android:textSize="10dp"
+                    android:layout_below="@id/txt_12"/>
+            </RelativeLayout>
+
+            <!--FIN DEL HEADER-->
+            <!--LLamadas mensajes y notificaciones-->
+            <LinearLayout
+                android:id="@+id/lly_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/borderthree"
+                android:layout_below="@id/rl_1"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <!--2-->
+                    <TextView
+                        android:id="@+id/txt_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_4"
+                        android:paddingLeft="10dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                    <!--Llamadas-->
+                    <TextView
+                        android:id="@+id/txt_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_5"
+                        android:textSize="15sp"
+                        android:layout_below="@id/txt_14"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="15dp"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+                <!--4 Mensajes-->
+
+                <RelativeLayout
+                    android:id="@+id/rl_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <!--4-->
+                    <TextView
+                        android:id="@+id/txt_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_6"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentTop="true"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                    <!--Mensajes-->
+                    <TextView
+                        android:id="@+id/txt_17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_5"
+                        android:textSize="15sp"
+                        android:layout_below="@id/txt_16"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="15dp"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+                <!--8 Notificaciones-->
+                <RelativeLayout
+                    android:id="@+id/rl_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <!--8-->
+                    <TextView
+                        android:id="@+id/txt_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_11"
+                        android:paddingLeft="10dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+                    <!--Notificaciones-->
+                    <TextView
+                        android:id="@+id/txt_19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_9"
+                        android:textSize="15sp"
+                        android:layout_below="@id/txt_18"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="15dp"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--Tercer Item Estado de la bateria-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordertwo"
+                android:paddingBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <!--Marco de la imagen de la camara-->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:background="#6F591D"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/img_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/camera"
+                        android:background="@android:color/white"/>
+                </RelativeLayout>
+
+                <!--ICONO IMAGEN-->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp"
+                    android:background="#6F591D"
+                    android:layout_marginTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/img_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/picture"
+                        android:layout_centerInParent="true"
+                        android:background="@android:color/white"/>
+                </RelativeLayout>
+
+                <!--Estado de la bateria-->
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="15"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#F90A3A">
+
+                    <TextView
+                        android:id="@+id/txt_20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_12"
+                        android:textColor="@android:color/white"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <!--FIN DEL ITEM 2-->
+
+            <!--INICIO ITEM 3-->
+
+            <RelativeLayout
+                android:id="@+id/rl_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderone"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/img_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/perfil_man" />
+
+                <!---->
+                <TextView
+                    android:id="@+id/txt_21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img_7"
+                    android:text="@string/strg_6"
+                    android:textSize="12dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txt_22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img_7"
+                    android:text="@string/strg_7"
+                    android:textSize="10dp"
+                    android:layout_below="@id/txt_21"/>
+
+                <TextView
+                    android:id="@+id/txt_23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img_7"
+                    android:text="@string/strg_8"
+                    android:textSize="10dp"
+                    android:layout_below="@id/txt_22"/>
+            </RelativeLayout>
+
+            <!--FIN DEL HEADER-->
+            <!--LLamadas mensajes y notificaciones-->
+            <LinearLayout
+                android:id="@+id/lly_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/borderthree"
+                android:layout_below="@id/rl_1"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <!--2-->
+                    <TextView
+                        android:id="@+id/txt_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_13"
+                        android:paddingLeft="10dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                    <!--Llamadas-->
+                    <TextView
+                        android:id="@+id/txt_25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_14"
+                        android:textSize="15sp"
+                        android:layout_below="@id/txt_24"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="15dp"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+                <!--4 Mensajes-->
+
+                <RelativeLayout
+                    android:id="@+id/rl_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <!--4-->
+                    <TextView
+                        android:id="@+id/txt_26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_15"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentTop="true"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                    <!--Mensajes-->
+                    <TextView
+                        android:id="@+id/txt_27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_5"
+                        android:textSize="15sp"
+                        android:layout_below="@id/txt_26"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="15dp"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+                <!--8 Notificaciones-->
+                <RelativeLayout
+                    android:id="@+id/rl_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <!--8-->
+                    <TextView
+                        android:id="@+id/txt_28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_16"
+                        android:paddingLeft="10dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+                    <!--Notificaciones-->
+                    <TextView
+                        android:id="@+id/txt_29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_9"
+                        android:textSize="15sp"
+                        android:layout_below="@id/txt_28"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="15dp"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--Tercer Item Estado de la bateria-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordertwo"
+                android:paddingBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <!--Marco de la imagen de la camara-->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:background="#6F591D"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/img_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/camera"
+                        android:background="@android:color/white"/>
+                </RelativeLayout>
+
+                <!--ICONO IMAGEN-->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp"
+                    android:background="#6F591D"
+                    android:layout_marginTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/img_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/picture"
+                        android:layout_centerInParent="true"
+                        android:background="@android:color/white"/>
+                </RelativeLayout>
+
+                <!--Estado de la bateria-->
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="15"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#F90A3A">
+
+                    <TextView
+                        android:id="@+id/txt_30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_17"
+                        android:textColor="@android:color/white"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/icons8_plus_math_40"
+        android:layout_margin="16dp"/>
+
+</android.support.design.widget.CoordinatorLayout>
